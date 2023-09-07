@@ -1,4 +1,4 @@
-export module ex_tuple;
+ï»¿export module ex_tuple;
 
 import dummy;
 import <iostream>;
@@ -8,21 +8,21 @@ import <string>;
 
 export namespace ex_tuple {
 
-// ŠÖ”‚©‚ç•¡”‚Ì’l‚ğ•Ô‚·
+// é–¢æ•°ã‹ã‚‰è¤‡æ•°ã®å€¤ã‚’è¿”ã™
 std::tuple<int, char, ex::Dummy> f()
 {
-    // std::make_tuple()‚Í‚Ù‚Æ‚ñ‚Ç‚Ìó‹µ‚Å•K—v‚È‚¢
+    // std::make_tuple()ã¯ã»ã¨ã‚“ã©ã®çŠ¶æ³ã§å¿…è¦ãªã„
     return { 1, 'a', 20, };
 }
 
 void Exec()
 {
-    // \‘¢‰»‘©”›‚Åƒ^ƒvƒ‹‚ğ•ª‰ğ‚µ‚ÄA‚»‚ê‚¼‚ê‚Ì—v‘f‚ğ‘ã“ü
-    auto [a, b, c] = f();//‚±‚±‚ÅƒRƒs[‚Í‘–‚ç‚È‚¢
+    // æ§‹é€ åŒ–æŸç¸›ã§ã‚¿ãƒ—ãƒ«ã‚’åˆ†è§£ã—ã¦ã€ãã‚Œãã‚Œã®è¦ç´ ã‚’ä»£å…¥
+    auto [a, b, c] = f();//ã“ã“ã§ã‚³ãƒ”ãƒ¼ã¯èµ°ã‚‰ãªã„
 
-    std::tuple<int, char, ex::Dummy> t = std::make_tuple(1, 'a', 1);//ƒRƒs[‚Í‘–‚ç‚È‚¢
+    std::tuple<int, char, ex::Dummy> t = std::make_tuple(1, 'a', 1);//ã‚³ãƒ”ãƒ¼ã¯èµ°ã‚‰ãªã„
 
-    auto s = std::get<2>(t);//&‚Â‚¯‚È‚¢‚ÆƒRƒs[‚ª‘–‚é
+    auto s = std::get<2>(t);//&ã¤ã‘ãªã„ã¨ã‚³ãƒ”ãƒ¼ãŒèµ°ã‚‹
     auto& ref_s = std::get<2>(t);
     auto&& rref_s = std::get<2>(t);
 }
