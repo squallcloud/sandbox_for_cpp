@@ -10,7 +10,7 @@ import ex_initializer_lists;
 int main(void)
 {
 #define __DEF_INFO(name) #name, &name::Exec,
-    std::map<std::string, std::function<void()>> s_func_list {
+    std::unordered_map<std::string, std::function<void()>> s_func_list {
         { __DEF_INFO(ex_foreach) },
         { __DEF_INFO(ex_tuple) },
         { __DEF_INFO(ex_initializer_lists) },

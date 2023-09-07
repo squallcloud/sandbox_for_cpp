@@ -13,6 +13,7 @@ public:
     MyVector(std::initializer_list<T> init)
     : data_(init.begin(), init.end())
     {
+        ::printf("%s \n", __FUNCSIG__);
     }
 
 
@@ -22,7 +23,15 @@ private:
 
 void Exec()
 {
-    MyVector<ex::Dummy> v = { 1, 2, 3 };
+    MyVector<ex::Dummy> v1 = { 1, 2, 3 };
+    MyVector<ex::Dummy> v2 { 1, 2, 3 };
+
+    std::initializer_list<ex::Dummy> init_list {
+        10, 20, 30,
+    };
+
+    MyVector<ex::Dummy> v3(init_list);
+    MyVector<ex::Dummy> v4 = init_list;
 }
 
 }//ex_initializer_lists
