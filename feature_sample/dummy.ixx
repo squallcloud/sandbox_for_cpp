@@ -11,6 +11,11 @@ class Dummy
     static std::mutex s_mutex;
 
 public:
+    static void ResetCounter() {
+        std::lock_guard<std::mutex> lock(s_mutex);
+        s_instance_counter = 0;
+    }
+
     Dummy() {
         UpdateCounter(serial_id);
         ::printf("%s[%llu] \n", __FUNCSIG__, serial_id);
