@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="dummy.ixx" />
     <ClCompile Include="ex_foreach.ixx" />
     <ClCompile Include="ex_tuple.ixx" />
     <ClCompile Include="main.cpp" />

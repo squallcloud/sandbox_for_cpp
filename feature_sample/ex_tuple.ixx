@@ -1,5 +1,6 @@
-ï»¿export module ex_tuple;
+export module ex_tuple;
 
+import dummy;
 import <iostream>;
 import <compare>;
 import <tuple>;
@@ -7,75 +8,21 @@ import <string>;
 
 export namespace ex_tuple {
 
-class Dummy
+// ŠÖ”‚©‚ç•¡”‚Ì’l‚ğ•Ô‚·
+std::tuple<int, char, ex::Dummy> f()
 {
-    static uint64_t s_instance_counter;
-
-public:
-    Dummy() {
-        serial_id = s_instance_counter;
-        s_instance_counter++;
-        ::printf("%s[%llu] \n", __FUNCSIG__, serial_id);
-    }
-
-    Dummy(const Dummy& in_rhs) {
-        serial_id = s_instance_counter;
-        s_instance_counter++;
-        ::printf("%s[%llu] \n", __FUNCSIG__, serial_id);
-    }
-
-    Dummy(Dummy&& in_rhs) {
-        serial_id = s_instance_counter;
-        s_instance_counter++;
-        ::printf("%s[%llu] \n", __FUNCSIG__, serial_id);
-    }
-
-    Dummy(const uint64_t in_val) {
-        serial_id = s_instance_counter;
-        s_instance_counter++;
-        ::printf("%s[%llu] \n", __FUNCSIG__, serial_id);
-
-        value = in_val;
-    }
-
-    ~Dummy() {
-        ::printf("%s[%llu] \n", __FUNCSIG__, serial_id);
-    }
-
-    Dummy& operator=(const Dummy& in_rhs) {
-        ::printf("%s[%llu] \n", __FUNCSIG__, serial_id);
-        return *this;
-    }
-
-    Dummy& operator=(Dummy&& in_rhs) {
-        ::printf("%s[%llu] \n", __FUNCSIG__, serial_id);
-        return *this;
-    }
-
-public:
-    uint64_t serial_id{};
-    uint64_t value{};
-};
-
-//static
-uint64_t Dummy::s_instance_counter = 0;
-
-
-// é–¢æ•°ã‹ã‚‰è¤‡æ•°ã®å€¤ã‚’è¿”ã™
-std::tuple<int, char, Dummy> f()
-{
-    // std::make_tuple()ã¯ã»ã¨ã‚“ã©ã®çŠ¶æ³ã§å¿…è¦ãªã„
+    // std::make_tuple()‚Í‚Ù‚Æ‚ñ‚Ç‚Ìó‹µ‚Å•K—v‚È‚¢
     return { 1, 'a', 20, };
 }
 
 void Exec()
 {
-    // æ§‹é€ åŒ–æŸç¸›ã§ã‚¿ãƒ—ãƒ«ã‚’åˆ†è§£ã—ã¦ã€ãã‚Œãã‚Œã®è¦ç´ ã‚’ä»£å…¥
-    auto [a, b, c] = f();//ã“ã“ã§ã‚³ãƒ”ãƒ¼ã¯èµ°ã‚‰ãªã„
+    // \‘¢‰»‘©”›‚Åƒ^ƒvƒ‹‚ğ•ª‰ğ‚µ‚ÄA‚»‚ê‚¼‚ê‚Ì—v‘f‚ğ‘ã“ü
+    auto [a, b, c] = f();//‚±‚±‚ÅƒRƒs[‚Í‘–‚ç‚È‚¢
 
-    std::tuple<int, char, Dummy> t = std::make_tuple(1, 'a', 1);//ã‚³ãƒ”ãƒ¼ã¯èµ°ã‚‰ãªã„
+    std::tuple<int, char, ex::Dummy> t = std::make_tuple(1, 'a', 1);//ƒRƒs[‚Í‘–‚ç‚È‚¢
 
-    auto s = std::get<2>(t);//&ã¤ã‘ãªã„ã¨ã‚³ãƒ”ãƒ¼ãŒèµ°ã‚‹
+    auto s = std::get<2>(t);//&‚Â‚¯‚È‚¢‚ÆƒRƒs[‚ª‘–‚é
     auto& ref_s = std::get<2>(t);
     auto&& rref_s = std::get<2>(t);
 }
