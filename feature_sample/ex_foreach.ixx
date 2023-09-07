@@ -1,4 +1,4 @@
-export module ex_foreach;
+ï»¿export module ex_foreach;
 
 import <iostream>;
 
@@ -61,7 +61,7 @@ void Exec()
 {
     Dummy dmy_array[10] { 1, };
 
-    // foreach Še—v‘f‚ğQÆ‚Å‚Æ‚ê‚é
+    // foreach å„è¦ç´ ã‚’å‚ç…§ã§ã¨ã‚Œã‚‹
     for (auto& dmy : dmy_array) {
         dmy.value = 10;
     }
