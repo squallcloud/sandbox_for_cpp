@@ -6,6 +6,7 @@ import dummy;
 import ex_foreach;
 import ex_tuple;
 import ex_initializer_lists;
+import ex_thread;
 
 int main(void)
 {
@@ -14,6 +15,7 @@ int main(void)
         { __DEF_INFO(ex_foreach) },
         { __DEF_INFO(ex_tuple) },
         { __DEF_INFO(ex_initializer_lists) },
+        { __DEF_INFO(ex_thread) },
     };
 #undef __DEF_INFO
 
