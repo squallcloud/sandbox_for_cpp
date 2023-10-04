@@ -22,6 +22,7 @@
     <ClCompile Include="dummy.ixx" />
     <ClCompile Include="ex_foreach.ixx" />
     <ClCompile Include="ex_initializer_lists.ixx" />
+    <ClCompile Include="ex_thread.ixx" />
     <ClCompile Include="ex_tuple.ixx" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
