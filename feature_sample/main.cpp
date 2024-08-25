@@ -8,6 +8,7 @@ import ex_tuple;
 import ex_initializer_lists;
 import ex_thread;
 import ex_field_init;
+import ex_multi_array;
 
 int main(void)
 {
@@ -18,6 +19,7 @@ int main(void)
         { __DEF_INFO(ex_initializer_lists) },
         { __DEF_INFO(ex_thread) },
         { __DEF_INFO(ex_field_init) },
+        { __DEF_INFO(ex_multi_array) },
     };
 #undef __DEF_INFO
 
