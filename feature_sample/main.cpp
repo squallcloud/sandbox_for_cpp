@@ -9,6 +9,7 @@ import ex_initializer_lists;
 import ex_thread;
 import ex_field_init;
 import ex_multi_array;
+import ex_template_meta_program;
 
 int main(void)
 {
@@ -20,6 +21,7 @@ int main(void)
         { __DEF_INFO(ex_thread) },
         { __DEF_INFO(ex_field_init) },
         { __DEF_INFO(ex_multi_array) },
+        { __DEF_INFO(ex_template_meta_program) },
     };
 #undef __DEF_INFO
 
