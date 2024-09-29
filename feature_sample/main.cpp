@@ -20,7 +20,7 @@ int main(void)
     };
 
 #define __DEF_INFO(name) #name, &name::Exec,
-    std::vector<FuncInfo> s_func_list{
+    const FuncInfo s_func_list[] {
         { __DEF_INFO(ex_foreach) },
         { __DEF_INFO(ex_tuple) },
         { __DEF_INFO(ex_initializer_lists) },
