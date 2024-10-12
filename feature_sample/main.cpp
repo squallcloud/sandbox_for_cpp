@@ -11,6 +11,7 @@ import ex_field_init;
 import ex_multi_array;
 import ex_template_meta_program;
 import ex_defined_macro;
+import ex_rvalue;
 
 int main(void)
 {
@@ -29,6 +30,7 @@ int main(void)
         { __DEF_INFO(ex_multi_array) },
         { __DEF_INFO(ex_template_meta_program) },
         { __DEF_INFO(ex_defined_macro) },
+        { __DEF_INFO(ex_rvalue) },
     };
 #undef __DEF_INFO
 
