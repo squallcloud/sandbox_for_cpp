@@ -35,6 +35,20 @@ void Exec()
 
         ::printf("x = %d, y = %d \n", hoge.x, hoge.y);
     }
+
+    {
+        struct Hoge {
+            const int x{};
+            const int y{};
+        };
+
+        Hoge hoge{
+            .x = 5,
+            .y = 4,
+        };
+
+        ::printf("x = %d, y = %d \n", hoge.x, hoge.y);
+    }
 }
 
 }//ex_field_init
