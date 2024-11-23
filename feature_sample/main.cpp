@@ -12,6 +12,7 @@ import ex_multi_array;
 import ex_template_meta_program;
 import ex_defined_macro;
 import ex_rvalue;
+import ex_component_oriented;
 
 int main(void)
 {
@@ -31,6 +32,7 @@ int main(void)
         { __DEF_INFO(ex_template_meta_program) },
         { __DEF_INFO(ex_defined_macro) },
         { __DEF_INFO(ex_rvalue) },
+        { __DEF_INFO(ex_component_oriented) },
     };
 #undef __DEF_INFO
 

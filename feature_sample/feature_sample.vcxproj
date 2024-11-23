@@ -21,6 +21,8 @@
   <ItemGroup>
     <ClCompile Include="dummy.cpp" />
     <ClCompile Include="dummy.ixx" />
+    <ClCompile Include="ex_component_oriented.cpp" />
+    <ClCompile Include="ex_component_oriented.ixx" />
     <ClCompile Include="ex_defined_macro.ixx" />
     <ClCompile Include="ex_field_init.ixx" />
     <ClCompile Include="ex_foreach.ixx" />
@@ -31,6 +33,8 @@
     <ClCompile Include="ex_thread.ixx" />
     <ClCompile Include="ex_tuple.ixx" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="util.cpp" />
+    <ClCompile Include="util.ixx" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

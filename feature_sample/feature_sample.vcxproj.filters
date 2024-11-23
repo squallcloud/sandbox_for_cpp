@@ -43,5 +43,17 @@
     <ClCompile Include="ex_rvalue.ixx">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
+    <ClCompile Include="ex_component_oriented.ixx">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="util.ixx">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="util.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ex_component_oriented.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
