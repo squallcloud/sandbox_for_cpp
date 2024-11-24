@@ -58,5 +58,13 @@
     <ClCompile Include="ex.ixx">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="ex\ex_typeindex.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ex.h">
+      <Filter>src</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
