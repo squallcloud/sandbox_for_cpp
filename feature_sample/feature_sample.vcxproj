@@ -33,6 +33,7 @@
     <ClCompile Include="ex\ex_thread.cpp" />
     <ClCompile Include="ex\ex_tuple.cpp" />
     <ClCompile Include="ex\ex_typeindex.cpp" />
+    <ClCompile Include="ex\ex_variant.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="util.cpp" />
     <ClCompile Include="util.ixx" />
