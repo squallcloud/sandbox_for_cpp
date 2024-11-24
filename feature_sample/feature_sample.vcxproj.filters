@@ -7,43 +7,43 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ex_foreach.ixx">
+    <ClCompile Include="ex\ex_foreach.ixx">
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="ex_tuple.ixx">
+    <ClCompile Include="ex\ex_tuple.ixx">
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="dummy.ixx">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="ex_initializer_lists.ixx">
+    <ClCompile Include="ex\ex_initializer_lists.ixx">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="ex_thread.ixx">
+    <ClCompile Include="ex\ex_thread.ixx">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="ex_field_init.ixx">
+    <ClCompile Include="ex\ex_field_init.ixx">
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="dummy.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="ex_multi_array.ixx">
+    <ClCompile Include="ex\ex_multi_array.ixx">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="ex_template_meta_program.ixx">
+    <ClCompile Include="ex\ex_template_meta_program.ixx">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="ex_defined_macro.ixx">
+    <ClCompile Include="ex\ex_defined_macro.ixx">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="ex_rvalue.ixx">
+    <ClCompile Include="ex\ex_rvalue.ixx">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="ex_component_oriented.ixx">
+    <ClCompile Include="ex\ex_component_oriented.ixx">
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="util.ixx">
@@ -52,7 +52,7 @@
     <ClCompile Include="util.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="ex_component_oriented.cpp">
+    <ClCompile Include="ex\ex_component_oriented.cpp">
       <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>
