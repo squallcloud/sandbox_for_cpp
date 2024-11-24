@@ -1,10 +1,10 @@
-﻿export module ex_thread;
+﻿import ex;
 
-import <thread>;
-import <chrono>;
 import dummy;
+#include <thread>
+#include <chrono>
 
-export namespace ex_thread {
+namespace ex_thread {
 
 void Exec()
 {

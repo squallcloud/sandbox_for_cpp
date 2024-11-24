@@ -1,12 +1,12 @@
-export module ex_defined_macro;
-
+﻿import ex;
 import dummy;
-import <iostream>;
-import <compare>;
-import <tuple>;
-import <string>;
 
-export namespace ex_defined_macro {
+#include <iostream>
+#include <compare>
+#include <tuple>
+#include <string>
+
+namespace ex_defined_macro {
 
 class Hoge
 {

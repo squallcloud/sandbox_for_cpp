@@ -1,9 +1,9 @@
-﻿export module ex_initializer_lists;
+﻿import ex;
 
 import dummy;
-import <vector>;
+#include <vector>
 
-export namespace ex_initializer_lists {
+namespace ex_initializer_lists {
 
 template <class T>
 class MyVector

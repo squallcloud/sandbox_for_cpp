@@ -1,12 +1,12 @@
-﻿export module ex_rvalue;
+﻿import ex;
 
 import dummy;
-import <iostream>;
-import <compare>;
-import <tuple>;
-import <string>;
+#include <iostream>
+#include <compare>
+#include <tuple>
+#include <string>
 
-export namespace ex_rvalue {
+namespace ex_rvalue {
 
 class Hoge
 {

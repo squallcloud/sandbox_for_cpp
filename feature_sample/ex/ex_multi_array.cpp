@@ -1,12 +1,12 @@
-﻿export module ex_multi_array;
+﻿import ex;
 
 import dummy;
-import <iostream>;
-import <compare>;
-import <tuple>;
-import <string>;
+#include <iostream>
+#include <compare>
+#include <tuple>
+#include <string>
 
-export namespace ex_multi_array {
+namespace ex_multi_array {
 
 void Exec()
 {
