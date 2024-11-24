@@ -1,8 +1,8 @@
-﻿export module ex_foreach;
+﻿module ex_foreach;
 
 import dummy;
 
-export namespace ex_foreach {
+namespace ex_foreach {
 
 void Exec()
 {

@@ -1,29 +1,7 @@
 ﻿export module ex_thread;
 
-import <thread>;
-import <chrono>;
-import dummy;
-
 export namespace ex_thread {
 
-void Exec()
-{
-    int x{};
-    int y{};
-
-    std::thread t([&] {
-        for (int idx = 0; idx < 1000; idx++) {
-            ++x;
-            ::printf("x = %d \n", x);
-        }
-    });
-
-    std::this_thread::sleep_for(std::chrono::microseconds(16));
-
-    --y;
-    ::printf("y = %d \n", y);
-
-    t.join();
-}
+void Exec();
 
 }//ex_thread

@@ -1,12 +1,12 @@
-﻿export module ex_tuple;
+﻿import ex_tuple;
 
 import dummy;
-import <iostream>;
-import <compare>;
-import <tuple>;
-import <string>;
+#include <iostream>
+#include <compare>
+#include <tuple>
+#include <string>
 
-export namespace ex_tuple {
+namespace ex_tuple {
 
 // 関数から複数の値を返す
 std::tuple<int, char, ex::Dummy> f()

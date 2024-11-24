@@ -1,12 +1,12 @@
-﻿export module ex_field_init;
+﻿import ex_field_init;
 
 import dummy;
-import <iostream>;
-import <compare>;
-import <tuple>;
-import <string>;
+#include <iostream>
+#include <compare>
+#include <tuple>
+#include <string>
 
-export namespace ex_field_init {
+namespace ex_field_init {
 
 void Exec()
 {

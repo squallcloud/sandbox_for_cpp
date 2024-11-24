@@ -1,12 +1,12 @@
-export module ex_template_meta_program;
+﻿import ex_template_meta_program;
 
 import dummy;
-import <iostream>;
-import <compare>;
-import <tuple>;
-import <string>;
+#include <iostream>
+#include <compare>
+#include <tuple>
+#include <string>
 
-export namespace ex_template_meta_program {
+namespace ex_template_meta_program {
 
 // check divisibility
 template <int u, int v>
