@@ -1,4 +1,4 @@
-﻿import ex_tuple;
+﻿import ex;
 
 import dummy;
 #include <iostream>

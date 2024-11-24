@@ -1,4 +1,4 @@
-﻿import ex_field_init;
+﻿import ex;
 
 import dummy;
 #include <iostream>

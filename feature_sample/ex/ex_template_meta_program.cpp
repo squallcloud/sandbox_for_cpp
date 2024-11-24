@@ -1,4 +1,4 @@
-﻿import ex_template_meta_program;
+﻿import ex;
 
 import dummy;
 #include <iostream>

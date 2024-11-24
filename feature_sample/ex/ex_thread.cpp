@@ -1,4 +1,4 @@
-﻿import ex_thread;
+﻿import ex;
 
 import dummy;
 #include <thread>

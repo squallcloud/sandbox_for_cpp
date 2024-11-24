@@ -1,4 +1,4 @@
-﻿import ex_initializer_lists;
+﻿import ex;
 
 import dummy;
 #include <vector>

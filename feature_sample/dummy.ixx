@@ -1,6 +1,5 @@
 ﻿export module dummy;
 
-import <iostream>;
 import <mutex>;
 
 export namespace ex {

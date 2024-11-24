@@ -1,4 +1,4 @@
-﻿import ex_defined_macro;
+﻿import ex;
 import dummy;
 
 #include <iostream>

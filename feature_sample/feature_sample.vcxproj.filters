@@ -28,36 +28,6 @@
     <ClCompile Include="ex\ex_component_oriented.cpp">
       <Filter>src\ex</Filter>
     </ClCompile>
-    <ClCompile Include="ex\ex_component_oriented.ixx">
-      <Filter>src\ex</Filter>
-    </ClCompile>
-    <ClCompile Include="ex\ex_defined_macro.ixx">
-      <Filter>src\ex</Filter>
-    </ClCompile>
-    <ClCompile Include="ex\ex_field_init.ixx">
-      <Filter>src\ex</Filter>
-    </ClCompile>
-    <ClCompile Include="ex\ex_foreach.ixx">
-      <Filter>src\ex</Filter>
-    </ClCompile>
-    <ClCompile Include="ex\ex_initializer_lists.ixx">
-      <Filter>src\ex</Filter>
-    </ClCompile>
-    <ClCompile Include="ex\ex_multi_array.ixx">
-      <Filter>src\ex</Filter>
-    </ClCompile>
-    <ClCompile Include="ex\ex_rvalue.ixx">
-      <Filter>src\ex</Filter>
-    </ClCompile>
-    <ClCompile Include="ex\ex_template_meta_program.ixx">
-      <Filter>src\ex</Filter>
-    </ClCompile>
-    <ClCompile Include="ex\ex_thread.ixx">
-      <Filter>src\ex</Filter>
-    </ClCompile>
-    <ClCompile Include="ex\ex_tuple.ixx">
-      <Filter>src\ex</Filter>
-    </ClCompile>
     <ClCompile Include="ex\ex_defined_macro.cpp">
       <Filter>src\ex</Filter>
     </ClCompile>
@@ -84,6 +54,9 @@
     </ClCompile>
     <ClCompile Include="ex\ex_tuple.cpp">
       <Filter>src\ex</Filter>
+    </ClCompile>
+    <ClCompile Include="ex.ixx">
+      <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

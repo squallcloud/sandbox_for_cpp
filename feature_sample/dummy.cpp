@@ -1,4 +1,6 @@
-import dummy;
+﻿import dummy;
+
+#include <iostream>
 
 namespace ex {
 

@@ -1,4 +1,4 @@
-﻿import ex_multi_array;
+﻿import ex;
 
 import dummy;
 #include <iostream>

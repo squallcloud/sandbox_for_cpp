@@ -1,4 +1,4 @@
-﻿import ex_component_oriented;
+﻿import ex;
 
 import util;
 #include <chrono>

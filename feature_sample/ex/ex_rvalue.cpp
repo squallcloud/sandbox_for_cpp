@@ -1,4 +1,4 @@
-﻿import ex_rvalue;
+﻿import ex;
 
 import dummy;
 #include <iostream>

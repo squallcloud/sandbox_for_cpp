@@ -1,18 +1,8 @@
 ﻿#include <functional>
 #include <string>
 #include <map>
-import <iostream>;
 import dummy;
-import ex_foreach;
-import ex_tuple;
-import ex_initializer_lists;
-import ex_thread;
-import ex_field_init;
-import ex_multi_array;
-import ex_template_meta_program;
-import ex_defined_macro;
-import ex_rvalue;
-import ex_component_oriented;
+import ex;
 
 int main(void)
 {

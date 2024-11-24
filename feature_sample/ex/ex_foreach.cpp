@@ -1,4 +1,4 @@
-﻿module ex_foreach;
+﻿import ex;
 
 import dummy;
 
