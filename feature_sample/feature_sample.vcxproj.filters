@@ -1,59 +1,59 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="ソース ファイル">
+    <Filter Include="src">
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx;h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ex_foreach.ixx">
-      <Filter>ソース ファイル</Filter>
+      <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">
-      <Filter>ソース ファイル</Filter>
+      <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="ex_tuple.ixx">
-      <Filter>ソース ファイル</Filter>
+      <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="dummy.ixx">
-      <Filter>ソース ファイル</Filter>
+      <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="ex_initializer_lists.ixx">
-      <Filter>ソース ファイル</Filter>
+      <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="ex_thread.ixx">
-      <Filter>ソース ファイル</Filter>
+      <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="ex_field_init.ixx">
-      <Filter>ソース ファイル</Filter>
+      <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="dummy.cpp">
-      <Filter>ソース ファイル</Filter>
+      <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="ex_multi_array.ixx">
-      <Filter>ソース ファイル</Filter>
+      <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="ex_template_meta_program.ixx">
-      <Filter>ソース ファイル</Filter>
+      <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="ex_defined_macro.ixx">
-      <Filter>ソース ファイル</Filter>
+      <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="ex_rvalue.ixx">
-      <Filter>ソース ファイル</Filter>
+      <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="ex_component_oriented.ixx">
-      <Filter>ソース ファイル</Filter>
+      <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="util.ixx">
-      <Filter>ソース ファイル</Filter>
+      <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="util.cpp">
-      <Filter>ソース ファイル</Filter>
+      <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="ex_component_oriented.cpp">
-      <Filter>ソース ファイル</Filter>
+      <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
