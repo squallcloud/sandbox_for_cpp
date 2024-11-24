@@ -61,5 +61,29 @@
     <ClCompile Include="ex\ex_defined_macro.cpp">
       <Filter>src\ex</Filter>
     </ClCompile>
+    <ClCompile Include="ex\ex_field_init.cpp">
+      <Filter>src\ex</Filter>
+    </ClCompile>
+    <ClCompile Include="ex\ex_foreach.cpp">
+      <Filter>src\ex</Filter>
+    </ClCompile>
+    <ClCompile Include="ex\ex_initializer_lists.cpp">
+      <Filter>src\ex</Filter>
+    </ClCompile>
+    <ClCompile Include="ex\ex_multi_array.cpp">
+      <Filter>src\ex</Filter>
+    </ClCompile>
+    <ClCompile Include="ex\ex_rvalue.cpp">
+      <Filter>src\ex</Filter>
+    </ClCompile>
+    <ClCompile Include="ex\ex_template_meta_program.cpp">
+      <Filter>src\ex</Filter>
+    </ClCompile>
+    <ClCompile Include="ex\ex_thread.cpp">
+      <Filter>src\ex</Filter>
+    </ClCompile>
+    <ClCompile Include="ex\ex_tuple.cpp">
+      <Filter>src\ex</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
