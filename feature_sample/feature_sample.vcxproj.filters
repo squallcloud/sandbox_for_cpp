@@ -58,5 +58,8 @@
     <ClCompile Include="ex\ex_tuple.ixx">
       <Filter>src\ex</Filter>
     </ClCompile>
+    <ClCompile Include="ex\ex_defined_macro.cpp">
+      <Filter>src\ex</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

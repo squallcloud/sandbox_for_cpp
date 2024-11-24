@@ -23,6 +23,7 @@
     <ClCompile Include="dummy.ixx" />
     <ClCompile Include="ex\ex_component_oriented.cpp" />
     <ClCompile Include="ex\ex_component_oriented.ixx" />
+    <ClCompile Include="ex\ex_defined_macro.cpp" />
     <ClCompile Include="ex\ex_defined_macro.ixx" />
     <ClCompile Include="ex\ex_field_init.ixx" />
     <ClCompile Include="ex\ex_foreach.ixx" />
