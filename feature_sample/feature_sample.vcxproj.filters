@@ -59,7 +59,13 @@
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="ex\ex_typeindex.cpp">
-      <Filter>src</Filter>
+      <Filter>src\ex</Filter>
+    </ClCompile>
+    <ClCompile Include="ex\ex_variant.cpp">
+      <Filter>src\ex</Filter>
+    </ClCompile>
+    <ClCompile Include="ex\ex_lamda.cpp">
+      <Filter>src\ex</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
