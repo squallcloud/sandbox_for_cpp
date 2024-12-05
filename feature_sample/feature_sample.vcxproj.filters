@@ -64,6 +64,9 @@
     <ClCompile Include="ex\ex_variant.cpp">
       <Filter>src\ex</Filter>
     </ClCompile>
+    <ClCompile Include="ex\ex_lamda.cpp">
+      <Filter>src\ex</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ex.h">
