@@ -14,20 +14,20 @@ public:
     ~ObjectManager();
 
     // オブジェクトを生成し、ハンドルを返す
-    HandleData CreateObject(int32_t init_val);
+    ObjectHandle CreateObject(int32_t init_val);
 
     // オブジェクトを破棄
-    void DestroyObject(HandleData handle);
+    void DestroyObject(ObjectHandle handle);
 
     // ハンドルが有効かつ、指しているオブジェクトが現在有効かをチェック
-    bool isValidHandle(HandleData handle) const;
+    bool isValidHandle(ObjectHandle handle) const;
 
     /*
     ハンドルから実際のオブジェクトへのポインタを取得
     (MyObjectHandle クラスからのみアクセスされることを想定)
     */
-    Object* GetObjectPtr(HandleData handle);
-    const Object* GetObjectPtr(HandleData handle) const;
+    Object* GetObjectPtr(ObjectHandle handle);
+    const Object* GetObjectPtr(ObjectHandle handle) const;
 
 
 
@@ -39,7 +39,6 @@ private:
         uint16_t version{};//このスロットの現在のバージョン
         bool is_used{};// このスロットが現在使用中か
     };
-
 
     /*
     グローバルなIDカウンタ（バージョンを含まない純粋なID管理にも使えるが、今回はバージョンで代用）

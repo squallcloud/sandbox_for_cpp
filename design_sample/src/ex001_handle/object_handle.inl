@@ -20,7 +20,7 @@ bool ObjectHandle::IsValid() const {
         return false;
     }
 
-    return g_object_manager->isValidHandle(handle_data_);
+    return g_object_manager->isValidHandle(*this);
 }
 
 Object& ObjectHandle::operator*()
@@ -29,7 +29,7 @@ Object& ObjectHandle::operator*()
         throw std::runtime_error("無効なハンドルをデリファレンスしようとしました！");
     }
 
-    return *g_object_manager->GetObjectPtr(handle_data_);
+    return *g_object_manager->GetObjectPtr(*this);
 }
 
 const Object& ObjectHandle::operator*() const
@@ -38,7 +38,7 @@ const Object& ObjectHandle::operator*() const
         throw std::runtime_error("無効なハンドルをデリファレンスしようとしました！");
     }
 
-    return *g_object_manager->GetObjectPtr(handle_data_);
+    return *g_object_manager->GetObjectPtr(*this);
 }
 
 Object* ObjectHandle::operator->()
@@ -47,7 +47,7 @@ Object* ObjectHandle::operator->()
         throw std::runtime_error("無効なハンドルに対してメンバアクセスしようとしました！");
     }
 
-    return g_object_manager->GetObjectPtr(handle_data_);
+    return g_object_manager->GetObjectPtr(*this);
 }
 
 const Object* ObjectHandle::operator->() const
@@ -56,7 +56,7 @@ const Object* ObjectHandle::operator->() const
         throw std::runtime_error("無効なハンドルに対してメンバアクセスしようとしました！");
     }
 
-    return g_object_manager->GetObjectPtr(handle_data_);
+    return g_object_manager->GetObjectPtr(*this);
 }
 
 bool ObjectHandle::operator==(const ObjectHandle& other_handle) const

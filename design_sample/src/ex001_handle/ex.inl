@@ -40,7 +40,7 @@ int main()
 
     printf("\n--- オブジェクト破棄と無効化のテスト ---\n");
 
-    g_object_manager->DestroyObject(handle1.handle_data_); // handle1 が指すオブジェクトを破棄
+    g_object_manager->DestroyObject(handle1); // handle1 が指すオブジェクトを破棄
 
     // handle1 は古いバージョンを参照しているので、isValid() が false になるはず
     if (!handle1.IsValid()) {
@@ -57,7 +57,7 @@ int main()
         printf("\n--- スロット再利用のテスト ---\n");
 
         // handle1 が指していたスロットが再利用される
-        ObjectHandle handle3(g_object_manager->CreateObject(30));
+        ObjectHandle handle3 = g_object_manager->CreateObject(30);
         if (handle3.IsValid()) {
             handle3->Print();
             printf("handle3 は handle1 と同じインデックスですが、バージョンは異なります。\n");

@@ -15,7 +15,7 @@ ObjectManager::~ObjectManager()
     printf("MyObjectManager が破棄されました。 \n");
 }
 
-HandleData ObjectManager::CreateObject(int32_t init_val)
+ObjectHandle ObjectManager::CreateObject(int32_t init_val)
 {
     uint16_t index{};
 
@@ -40,58 +40,58 @@ HandleData ObjectManager::CreateObject(int32_t init_val)
 
     printf("  オブジェクト作成: インデックス=%u, バージョン=%u \n", index, slots_[index].version);
 
-    return { index, slots_[index].version };
+    return ObjectHandle{ { index, slots_[index].version } };
 }
 
 // オブジェクトを破棄
-void ObjectManager::DestroyObject(HandleData handle)
+void ObjectManager::DestroyObject(ObjectHandle handle)
 {
     if (!isValidHandle(handle)) {
         printf("  エラー: 既に無効か不正なハンドルを破棄しようとしました。 \n");
         return;
     }
 
-    ObjectSlot& slot = slots_[handle.index];
-    if (slot.version != handle.version) {
+    ObjectSlot& slot = slots_[handle.handle_data_.index];
+    if (slot.version != handle.handle_data_.version) {
         // バージョン不一致（既に再利用されたスロットの古いハンドル）
         printf("  エラー: 古いバージョンのハンドルでオブジェクトを破棄しようとしました。 \n");
         return;
     }
 
-    std::cout << "  オブジェクト破棄: インデックス=" << handle.index << ", バージョン=" << slot.version << "\n";
+    std::cout << "  オブジェクト破棄: インデックス=" << handle.handle_data_.index << ", バージョン=" << slot.version << "\n";
     slot.object.~Object(); // オブジェクトのデストラクタを手動で呼び出す（非推奨：POD以外は注意）
     // std::vector::erase()を使うか、placement new の逆を行う
     slot.is_used = false;
     // バージョンをインクリメントしてからフリーリストに追加（次にこのスロットが使われた時用）
     slot.version++;
-    free_indices_.push_back(handle.index);
+    free_indices_.push_back(handle.handle_data_.index);
 }
 
-bool ObjectManager::isValidHandle(HandleData handle) const
+bool ObjectManager::isValidHandle(ObjectHandle handle) const
 {
-    if (handle.index >= slots_.size() || !slots_[handle.index].is_used) {
+    if (handle.handle_data_.index >= slots_.size() || !slots_[handle.handle_data_.index].is_used) {
         return false; // インデックスが範囲外か、スロットが使用中でない
     }
     // バージョンが一致しない場合も無効
-    return slots_[handle.index].version == handle.version;
+    return slots_[handle.handle_data_.index].version == handle.handle_data_.version;
 }
 
-Object* ObjectManager::GetObjectPtr(HandleData handle)
+Object* ObjectManager::GetObjectPtr(ObjectHandle handle)
 {
     if (!isValidHandle(handle)) {
         return nullptr;
     }
 
-    return &slots_[handle.index].object;
+    return &slots_[handle.handle_data_.index].object;
 }
 
-const Object* ObjectManager::GetObjectPtr(HandleData handle) const
+const Object* ObjectManager::GetObjectPtr(ObjectHandle handle) const
 {
     if (!isValidHandle(handle)) {
         return nullptr;
     }
 
-    return &slots_[handle.index].object;
+    return &slots_[handle.handle_data_.index].object;
 }
 
 }//ex001_handle
