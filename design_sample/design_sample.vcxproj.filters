@@ -5,6 +5,9 @@
       <UniqueIdentifier>{1a54da69-2db3-433e-a4fb-e622a8067430}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd;cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="src\ex001_handle">
+      <UniqueIdentifier>{22ae5796-0ac8-429a-853c-b589532d45ef}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
@@ -18,5 +21,28 @@
     <ClInclude Include="src\pch.h">
       <Filter>src</Filter>
     </ClInclude>
+    <ClInclude Include="src\ex001_handle\object.h">
+      <Filter>src\ex001_handle</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ex001_handle\object_handle.h">
+      <Filter>src\ex001_handle</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ex001_handle\object_manager.h">
+      <Filter>src\ex001_handle</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\ex001_handle\ex.inl">
+      <Filter>src\ex001_handle</Filter>
+    </None>
+    <None Include="src\ex001_handle\object.inl">
+      <Filter>src\ex001_handle</Filter>
+    </None>
+    <None Include="src\ex001_handle\object_handle.inl">
+      <Filter>src\ex001_handle</Filter>
+    </None>
+    <None Include="src\ex001_handle\object_manager.inl">
+      <Filter>src\ex001_handle</Filter>
+    </None>
   </ItemGroup>
 </Project>
