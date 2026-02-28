@@ -142,6 +142,7 @@
     <ClInclude Include="src\ex001_handle\object.h" />
     <ClInclude Include="src\ex001_handle\object_handle.h" />
     <ClInclude Include="src\ex001_handle\object_manager.h" />
+    <ClInclude Include="src\ex002_auto_init\auto_init.h" />
     <ClInclude Include="src\pch.h" />
   </ItemGroup>
   <ItemGroup>
@@ -149,6 +150,7 @@
     <None Include="src\ex001_handle\object.inl" />
     <None Include="src\ex001_handle\object_handle.inl" />
     <None Include="src\ex001_handle\object_manager.inl" />
+    <None Include="src\ex002_auto_init\ex.inl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
