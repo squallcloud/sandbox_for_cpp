@@ -19,10 +19,10 @@ public:
         存在する場合のみコンパイル・実行される
         */
         if constexpr (requires(T t) { t.post_construct(); }) {
-            post_construct();
+            this->post_construct();
         }
         if constexpr (requires(T t) { t.PostConstruct(); }) {
-            PostConstruct();
+            this->PostConstruct();
         }
     }
 };
