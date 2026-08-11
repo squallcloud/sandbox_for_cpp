@@ -4,7 +4,7 @@
         {
             "label": "build solution",
             "type": "shell",
-            "command": "msbuild",
+            "command": "${config:msbuild.path}",
             "args": [
                 "${workspaceFolder}\\sandbox_for_cpp.sln",
                 "/p:Configuration=Debug",
@@ -24,7 +24,7 @@
         {
             "label": "clean solution",
             "type": "shell",
-            "command": "msbuild",
+            "command": "${config:msbuild.path}",
             "args": [
                 "${workspaceFolder}\\sandbox_for_cpp.sln",
                 "/p:Configuration=Debug",
